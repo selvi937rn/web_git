@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Circle Area (1)</title>
+    <script language="javascript" type="text/javascript">
+        function getLuas(r) {
+            return Math.PI * r * r;
+        }
+        function getKeliling(r) {
+            return Math.PI * 2 * r;
+        }
+        function getVolume(r) {
+            return r * r * r;
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1>Keliling Lingkaran</h1>
+    <p>
+        <form>
+            Enter radius, then press tab key or click on "area"
+            box.<br />
+            radius (cm):
+            <input type="text" name="radius" size="6" maxlength="7" value="-99" 
+            , onblur="area.value=getKeliling(parseFloat(radius.value));">
+            area (cm);
+            <input type="text" name="keliling" size="6" maxlength="7" value="99">
+            
+        </form>
+    </p>
+    <br>
+    <h1>Luas Lingkarang</h1>
+    <p>
+        <form>
+            Enter radius, then press tab key or click on "area"
+            box.<br />
+            radius (cm):
+            <input type="text" name="radius" size="6" maxlength="7" value="-99" 
+            , onblur="area.value=getLuas(parseFloat(radius.value));">
+            area (cm<sup>2</sup>);
+            <input type="text" name="area" size="6" maxlength="7" value="99">
+            
+        </form>
+    </p>
+    <br>
+    <h1>Volume Kubus</h1>
+    <p>
+        <form>
+            Enter radius, then press tab key or click on "area"
+            box.<br />
+            radius (cm):
+            <input type="text" name="radius" size="6" maxlength="7" value="-99" 
+            , onblur="area.value=getVolume(parseFloat(radius.value));">
+            area (cm<sup>3</sup>);
+            <input type="text" name="area" size="6" maxlength="7" value="99">
+            
+        </form>
+    </p>
+
+</body>
+
+</html>
