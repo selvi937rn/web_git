@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+           $(document).ready(function(){
+            $("#flip").click(function(){
+                $("#panel").slideDown("slow");
+            }); });
+        </script>
+        <style>
+        #panel, #flip{
+            padding:5px;
+            text-align: center;
+            background-color: #e5eecc;
+            border: solid 1px #c3c3c3;
+        }
+        #panel{
+            padding: 5px;
+            display: none;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="flip">Click to slide down panel</div>
+        <div id="panel">Politeknik Elektronika Negeri Surabaya
+            <br> Inspire technology through innovation and exellence with information Technology 
+            and Computer Engineering
+            <br>
+            At this time the need for information technology plays a very important role and in
+            the future it will become the backbone of the nation's economic growth.
+        </div>
+
+    </body>
+</html>
